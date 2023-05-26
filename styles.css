@@ -1,7 +1,13 @@
+
+:root {
+    --right-side-background-color: rgb(240, 240, 240);;
+}
+
 body {
     height: 100vh;
     width: 100vw;
     margin: 0;
+    font-family: sans-serif;
 }
 
 .main {
@@ -26,6 +32,7 @@ body {
     flex: .60;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .logo-container {
@@ -43,4 +50,72 @@ body {
 
 .logo {
     height: 90%;
+}
+
+.above-form, .below-form {
+    flex: 1;
+    background-color: var(--right-side-background-color);
+    padding: 12px 24px;
+}
+
+.form-container{
+    flex: 2;
+    padding: 12px 20% 12px 24px;
+    box-shadow: 10px 10px 5px black;
+}
+
+.labels-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 42px 42px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    flex-basis: 33%;
+    
+}
+
+.label input {
+    height: 24px;
+    font-size: 24px;
+    border-radius: 6px;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+*:focus {
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid aqua;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+input:invalid:focus {
+    border: 2px solid red;
+}
+
+
+legend {
+    font-size: 24px;
+    padding: 16px 16px 16px 0px;
+    font-weight: bold;
+}
+
+.sub-btn {
+    box-sizing: border-box;
+    height: 4em;
+    width: 10em;
+    background-color: indigo;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
 }
